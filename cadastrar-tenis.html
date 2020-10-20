@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+        <title>Cadastrar novo produto</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script>
+          $(document).ready(function(){
+            $(".cor-confirmar").on({
+              mouseenter: function(){
+                $(this).css("background-color", "#00FF7F");
+              },
+              mouseleave: function(){
+                $(this).css("background-color", "white")
+              }
+            })
+          })
+        </script>
+        <script>
+          $(document).ready(function(){
+            $(".cor-cancelar").on({
+              mouseenter: function(){
+                $(this).css("background-color", "#CDC9C9");
+              },
+              mouseleave: function(){
+                $(this).css("background-color", "white")
+              }
+            })
+          })
+        </script>
+        <script>
+          $(document).ready(function(){
+            $(".edita-cor").on({
+              mouseenter: function(){
+                $(this).css("color", "#00FF7F");
+                $(this).css("background-color", "#4F4F4F")
+              },
+              mouseleave: function(){
+                $(this).css("color", "white")
+              }
+            })
+          })
+        </script>
+    </head>
+    <body class="bd">
+        <nav class="navbar navbar-expand-lg cor">
+            <a id="logo"class="navbar-brand" href="index.html">Itênis</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+        <div class="container">
+            <h2 class="borda-titulo">Cadastro de novos produtos</h2>
+            <br>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label for="nome-tenis">Nome do produto</label>
+                        <input type="text" class="form-control" id="nome-tenis" placeholder="Nome do produto">
+                    </div>
+                    <div class="col">
+                        <label for="marca">Marca</label>
+                        <input type="text" id="marca" placeholder="Marca" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label class="margin-label" for="categoria">Categoria</label>
+                        <select class="form-control" id="categoria">
+                            <option value="casual">Casual</option>
+                            <option value="corrida">Corrida</option>
+                            <option value="chuteiras">Chuteiras</option>
+                            <option value="basquete">Basquete</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label class="margin-label" for="genero">Gênero</label>
+                        <select class="form-control" id="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="infantil">Infantil</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <h3 class="borda-titulo"></h3>
+                <div class="row">
+                    <div class="col">
+                        <label class="margin-label" for="empresa">Empresa fornecedora</label>
+                        <input type="text" class="form-control" placeholder="Empresa fornecedora" id="empresa">
+                    </div>
+                    <div class="col">
+                        <label class="margin-label" for="codigo">Código da empresa fornecedora</label>
+                        <input type="text" class="form-control" placeholder="Código da empresa fornecedora" id="codigo">
+                    </div>
+                    <div class="col">
+                        <label class="margin-label" for="part-number">Part number</label>
+                        <input type="text" class="form-control" placeholder="Part number do produto" id="part-number">
+                    </div>
+                </div>
+                <br>
+                <h3 class="borda-titulo"></h3>
+                <h6>Adicione fotos do produto</h6>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Adicione fotos do produto, arrastando até aqui." rows="4"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <button class="btn bt-cancelar cor-cancelar" type="button" name="button">Cancelar</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn bt-confirmar cor-confirmar" type="button" name="button">Confirmar</button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <footer>
+                 <p class="edit">Copyright (c) 2020 Itênis - Todos os Direitos Reservados
+                   <a href="https://www.instagram.com">
+                       <img src="imagens/logo_instagram.png"style="float: right;" width="50px" height="50px" alt="Logo instagram">
+                   </a>
+                   <a href="https://www.linkedin.com">
+                       <img src="imagens/linkedin-icon.png" style="float: right;" width="50px" height="50px" alt="Logo linkedin">
+                   </a>
+                   <a href="https://www.youtube.com">
+                       <img src="imagens/youtube-icon.png" style="float: right;" width="50px" height="50px" alt="Logo youtube">
+                   </a>
+                   <a href="https://www.facebook.com">
+                       <img src="imagens/icon-facebook.png" style="float: right;" width="50px" height="50px" alt="Logo facebook">
+                   </a>
+                 </p>
+                 <p class="edit">Endereço: Avenida Victor do Amaral, 398, Centro, Araucária-PR</p>
+               </footer>
+
+            </form>
+        </div>
+
+    </body>
+</html>

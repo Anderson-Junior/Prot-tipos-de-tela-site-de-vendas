@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro novo cliente</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script>
+          $(document).ready(function(){
+            $(".edita-cor").on({
+              mouseenter: function(){
+                $(this).css("color", "#00FF7F");
+                $(this).css("background-color", "#4F4F4F")
+              },
+              mouseleave: function(){
+                $(this).css("color", "white")
+              }
+            })
+          })
+        </script>
+        <script>
+          $(document).ready(function(){
+            $(".cor-confirmar").on({
+              mouseenter: function(){
+                $(this).css("background-color", "#00FF7F");
+              },
+              mouseleave: function(){
+                $(this).css("background-color", "white")
+              }
+            })
+          })
+        </script>
+        <script>
+          $(document).ready(function(){
+            $(".cor-cancelar").on({
+              mouseenter: function(){
+                $(this).css("background-color", "#CDC9C9");
+              },
+              mouseleave: function(){
+                $(this).css("background-color", "white")
+              }
+            })
+          })
+        </script>
+    </head>
+    <body class="bd">
+        <nav class="navbar navbar-expand-lg cor">
+            <a id="logo"class="navbar-brand" href="index.html">Itênis</a>
+              <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link edita-cor" href="login.html">
+                        <img src="imagens/person.png" width="20px" height="20px" alt="person">
+                        <span class="sr-only">(current)</span>
+                        Conta
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link edita-cor" href="#">Ofertas</a>
+                  </li>
+                  <li class="nav-item active dropdown">
+                      <a class="nav-link dropdown-toggle edita-cor" href="masculino.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Masculino
+                      </a>
+                        <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item edita-cor teste-cor" href="corrida-masculino.html">Corrida</a>
+                            <a class="dropdown-item edita-cor teste-cor" href="#">Casual</a>
+                            <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                            <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                        </div>
+                  </li>
+                  <li class="nav-item active dropdown">
+                      <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Feminino
+                      </a>
+                      <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item edita-cor teste-cor" href="corrida-feminino.html">Corrida</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="casual-feminino.html">Casual</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                      </div>
+                  </li>
+                  <li class="nav-item active dropdown">
+                      <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Infantil
+                      </a>
+                      <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item edita-cor teste-cor" href="#">Corrida</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="#">Casual</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                      </div>
+                  </li>
+                  <li class="nav-item active dropdown">
+                      <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Marcas
+                      </a>
+                      <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item edita-cor teste-cor" href="nike.html">Nike</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="adidas.html">Adidas</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="newbalance.html">New Balance</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="puma.html">Puma</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="vans.html">Vans</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="mizumo.html">Mizuno</a>
+                          <a class="dropdown-item edita-cor teste-cor" href="#">Asics</a>
+
+                      </div>
+                  </li>
+                  </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <button id="borda" type="button" name="button" class="btn btn-cor material-icons borda">shopping_cart</button>
+                        <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Search">
+                        <button class="btn btn-cor my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+              </div>
+            </nav>
+            <div class="container">
+                <h2 class="borda-titulo">Dados pesosais</h2>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" required placeholder="Seu nome">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" class="form-control" required placeholder="Seu CPF">
+                        </div>
+                        <div class="col">
+                            <label for="data-nasc">Data de nascimento</label>
+                            <input type="date" id="data-nasc" class="form-control" required placeholder="Sua data de nascimento">
+                        </div>
+                        <div class="col">
+                            <label for="">Sexo</label>
+                            <div class="form-check">
+                                <input class="form-check-input" name="exampleRadios" type="radio" id="masculino" value="1">
+                                <label class="form-check-label" for="sexo">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" name="exampleRadios" type="radio" id="femininoo" value="1">
+                                <label class="form-check-label" for="sexo">Masculino</label>
+                            </div>
+                        </div>
+                     </div>
+                     <br>
+                    <h2 class="borda-titulo">Endereço</h2>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="logra">Logradouro</label>
+                            <input type="text" class="form-control" id="logra" placeholder="Av. Paulista" required>
+                        </div>
+                        <div class="col">
+                            <label for="numero">Número</label>
+                            <input type="text" class="form-control" id="numero" placeholder="N°" required>
+                        </div>
+                        <div class="col">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" id="complemento" placeholder="Casa, Apto, Loja" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <label class="margin-label" for="estado">Estado</label>
+                                <select class="form-control" id="estado">
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                    <option value="DF">DF</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label class="margin-label" for="cidade">Cidade</label>
+                                <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h2 class="borda-titulo">Crie uma senha</h2>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" class="form-control" placeholder="Senha">
+                        </div>
+                        <div class="col">
+                            <label for="confirma-senha">Confirme sua senha</label>
+                            <input type="password" id="confirma-senha" class="form-control" placeholder="Confirme sua senha">
+                        </div>
+                    </div>
+                    <br>
+                    <h2 class="borda-titulo"></h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button class="btn bt-cancelar cor-cancelar" type="button" name="button">Cancelar</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn bt-confirmar cor-confirmar" type="button" name="button">Confirmar</button>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <br>
+                <footer>
+                 <p class="edit">Copyright (c) 2020 Itênis - Todos os Direitos Reservados
+                   <a href="https://www.instagram.com">
+                       <img src="imagens/logo_instagram.png"style="float: right;" width="50px" height="50px" alt="Logo instagram">
+                   </a>
+                   <a href="https://www.linkedin.com">
+                       <img src="imagens/linkedin-icon.png" style="float: right;" width="50px" height="50px" alt="Logo linkedin">
+                   </a>
+                   <a href="https://www.youtube.com">
+                       <img src="imagens/youtube-icon.png" style="float: right;" width="50px" height="50px" alt="Logo youtube">
+                   </a>
+                   <a href="https://www.facebook.com">
+                       <img src="imagens/icon-facebook.png" style="float: right;" width="50px" height="50px" alt="Logo facebook">
+                   </a>
+                 </p>
+                 <p class="edit">Endereço: Avenida Victor do Amaral, 398, Centro, Araucária-PR</p>
+               </footer>
+            </div>
+
+    </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <script>
+    $(document).ready(function(){
+      $(".edita-cor").on({
+        mouseenter: function(){
+          $(this).css("color", "#00FF7F");
+          $(this).css("background-color", "#4F4F4F")
+        },
+        mouseleave: function(){
+          $(this).css("color", "white")
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".cor-confirmar").on({
+        mouseenter: function(){
+          $(this).css("background-color", "#00FF7F");
+        },
+        mouseleave: function(){
+          $(this).css("background-color", "white")
+        }
+      })
+    })
+  </script>
+
+    <style >
+        body{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+          background-size: cover;
+        }
+
+        .login-box{
+          width: 280px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: black;
+        }
+        .login-box h1{
+          float: left;
+          font-size: 40px;
+          border-bottom: 6px solid #00FF7F;
+          margin-bottom: 50px;
+          padding: 13px 0;
+        }
+
+        .textbox{
+          width: 100%;
+          overflow: hidden;
+          font-size: 10px;
+          padding: 8px 0;
+          margin: 8px 0;
+          border-bottom: 1px solid black;
+        }
+        .textbox i{
+          width: 26px;
+          float: left;
+          text-align: center;
+        }
+
+        .textbox input{
+          border: none;
+          outline: none;
+          background: none;
+          color: black;
+          font-size: 18px;
+          width: 80px;
+          float: left;
+          margin: 0 10px;
+        }
+
+        .abc{
+          width: 100%;
+          background: none;
+          border: 2px solid black;
+          color: black;
+          padding: 5px;
+          font-size: 18px;
+          cursor: pointer;
+          margin: 12px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+          <h1>Login</h1>
+          <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Nome" name="" value="">
+          </div>
+          <div class="textbox">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Senha" name="" value="">
+          </div>
+          <div >
+            <button class="abc cor-confirmar"type="button" name="button">Entrar</button>
+          </div>
+          <div>
+            <br>
+            <label for="">Não possuí uma conta?
+              <a href="cadastro.html">Clique aqui</a>
+            </label>
+          </div>
+    </div>
+    <nav class="navbar navbar-expand-lg cor">
+        <a id="logo"class="navbar-brand" href="index.html">Itênis</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link edita-cor" href="login.html">
+                    <img src="imagens/person.png" width="20px" height="20px" alt="person">
+                    <span class="sr-only">(current)</span>
+                    Conta
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link edita-cor" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="masculino.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Masculino
+                  </a>
+                    <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item edita-cor teste-cor" href="corrida-masculino.html">Corrida</a>
+                        <a class="dropdown-item edita-cor teste-cor" href="#">Casual</a>
+                        <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                        <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                    </div>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Feminino
+                  </a>
+                  <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item edita-cor teste-cor" href="corrida-feminino.html">Corrida</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="casual-feminino.html">Casual</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                  </div>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Infantil
+                  </a>
+                  <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Corrida</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Casual</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                  </div>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Marcas
+                  </a>
+                  <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item edita-cor teste-cor" href="nike.html">Nike</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="adidas.html">Adidas</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="newbalance.html">New Balance</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="puma.html">Puma</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="vans.html">Vans</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="mizumo.html">Mizuno</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Asics</a>
+
+                  </div>
+              </li>
+              </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button id="borda" type="button" name="button" class="btn btn-cor material-icons borda">shopping_cart</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Search">
+                    <button class="btn btn-cor my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+          </div>
+        </nav>
+  </body>
+</html>

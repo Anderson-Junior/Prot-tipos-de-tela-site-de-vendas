@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+    <title>Feminino</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script>
+      $(document).ready(function(){
+        $(".edita-cor").on({
+          mouseenter: function(){
+            $(this).css("color", "#00FF7F");
+            $(this).css("background-color", "#4F4F4F")
+          },
+          mouseleave: function(){
+            $(this).css("color", "white")
+          }
+        })
+      })
+    </script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg cor">
+        <a id="logo"class="navbar-brand" href="index.html">Itênis</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link edita-cor" href="login.html">
+                    <img src="imagens/person.png" width="20px" height="20px" alt="person">
+                    <span class="sr-only">(current)</span>
+                    Conta
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link edita-cor" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="masculino.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Masculino
+                  </a>
+                    <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item edita-cor teste-cor" href="corrida-masculino.html">Corrida</a>
+                        <a class="dropdown-item edita-cor teste-cor" href="#">Casual</a>
+                        <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                        <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                    </div>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Feminino
+                  </a>
+                  <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item edita-cor teste-cor" href="corrida-feminino.html">Corrida</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="casual-feminino.html">Casual</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                  </div>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Infantil
+                  </a>
+                  <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Corrida</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Casual</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Chuteiras</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Basquete</a>
+                  </div>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle edita-cor" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Marcas
+                  </a>
+                  <div class="dropdown-menu teste" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item edita-cor teste-cor" href="nike.html">Nike</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="adidas.html">Adidas</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="newbalance.html">New Balance</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="puma.html">Puma</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="vans.html">Vans</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="mizumo.html">Mizuno</a>
+                      <a class="dropdown-item edita-cor teste-cor" href="#">Asics</a>
+
+                  </div>
+              </li>
+              </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button id="borda" type="button" name="button" class="btn btn-cor material-icons borda">shopping_cart</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="O que você procura?" aria-label="Search">
+                    <button class="btn btn-cor my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+          </div>
+        </nav>
+
+        <div class="container">
+          <br>
+          <h3 class="borda-titulo">Tênis casual feminino</h3>
+          <br>
+          <div class="card-deck espaço-card">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="imagens/casual-feminino/Tênis Nike Air Max DiaFeminino.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Tênis Nike Air Max DiaFeminino</p>
+                  <p class="card-text"> <b>Marca: Nike</b></p>
+                  <p class="card-text"> <b>R$ 299,99</b></p>
+
+                  <button type="button" class="btn btn-primary" name="button">Comprar</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="imagens/casual-feminino/Tênis Nike Tanjun Feminino.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Tênis Nike Tanjun Feminino</p>
+                  <p class="card-text"> <b>Marca: Nike</b></p>
+                  <p class="card-text"> <b>R$ 289,99</b></p>
+
+                  <button type="button" class="btn btn-primary" name="button">Comprar</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="imagens/casual-feminino/Tênis Nike Air Max 270 React SE Feminino.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Tênis Nike Air Max 270 React SE Feminino</p>
+                  <p class="card-text"> <b>Marca: Nike</b></p>
+                  <p class="card-text"> <b>R$ 699,99</b></p>
+
+                  <button type="button" class="btn btn-primary" name="button">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck espaço-card">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/casual-feminino/TÊNIS ADIDAS SUPERSTAR FEMININO.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Tênis Adidas Superstar Feminino</p>
+                <p class="card-text"> <b>Marca: Adidas</b></p>
+                <p class="card-text"> <b>R$ 299,99</b></p>
+
+                <button type="button" class="btn btn-primary" name="button">Comprar</button>
+              </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/casual-feminino/Tenis-adidas-Superstar-Slip-On-Feminino-Preto.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Tenis adidas Superstar Slip-On Feminino Preto</p>
+                <p class="card-text"> <b>Marca: Adidas</b></p>
+                <p class="card-text"> <b>R$ 379,99</b></p>
+
+                <button type="button" class="btn btn-primary" name="button">Comprar</button>
+              </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="imagens/casual-feminino/adidas-Tênis-Casual-Adidas-Chaos-Preto.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Tênis Casual Adidas Chaos Preto Feminino</p>
+                <p class="card-text"> <b>Marca: Adidas</b></p>
+                <p class="card-text"> <b>R$ 229,99</b></p>
+
+                <button type="button" class="btn btn-primary" name="button">Comprar</button>
+              </div>
+          </div>
+      </div>
+        <br>
+        <footer>
+         <p class="edit">Copyright (c) 2020 Itênis - Todos os Direitos Reservados
+           <a href="https://www.instagram.com">
+               <img src="imagens/logo_instagram.png"style="float: right;" width="50px" height="50px" alt="Logo instagram">
+           </a>
+           <a href="https://www.linkedin.com">
+               <img src="imagens/linkedin-icon.png" style="float: right;" width="50px" height="50px" alt="Logo linkedin">
+           </a>
+           <a href="https://www.youtube.com">
+               <img src="imagens/youtube-icon.png" style="float: right;" width="50px" height="50px" alt="Logo youtube">
+           </a>
+           <a href="https://www.facebook.com">
+               <img src="imagens/icon-facebook.png" style="float: right;" width="50px" height="50px" alt="Logo facebook">
+           </a>
+         </p>
+         <p class="edit">Endereço: Avenida Victor do Amaral, 398, Centro, Araucária-PR</p>
+       </footer>
+      </div>
+  </body>
+</html>
